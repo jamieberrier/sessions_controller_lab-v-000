@@ -1,5 +1,5 @@
 <% binding.pry %>
-<% if params[:name].nil? || params[:name].empty?
+<% if session[:name].nil? || session[:name].empty?
   redirect_to sessions_new_path
 <% else %>
   <h1>Hi, <%= session[:name] %>.</h1>
