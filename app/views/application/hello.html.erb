@@ -1,3 +1,4 @@
+<!-- If the user is not logged in, the page should show them a login link. -->
 <% if session[:name].nil? || session[:name].empty? %>
   <%= link_to "Login", sessions_new_path %>
 <% else %>
