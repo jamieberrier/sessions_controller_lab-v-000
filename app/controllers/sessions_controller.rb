@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
   def destroy
     if !session[:name].nil?
       session.delete :name
-      render root_path
+      redirect_to root_path
     end
   end
 end
