@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    
+
   end
 
   def create
@@ -15,6 +15,7 @@ class SessionsController < ApplicationController
   def destroy
     if !session[:name].nil?
       session.delete :name
+      redirect_to root_path
     end
   end
 end
