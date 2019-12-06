@@ -5,6 +5,8 @@ class SessionsController < ApplicationController
   def create
     if params[:name].nil?
       redirect_to :new
+    else
+    end
   end
 
   def destroy
